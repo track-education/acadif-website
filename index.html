@@ -1,27 +1,486 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Acadif Contact</title>
-  <style>
-    body { background-color: #000; color: orange; font-family: 'Courier New', monospace; text-align: center; padding-top: 50px; }
-    input, textarea {
-      border-radius: 10px; padding: 10px; margin: 10px auto; display: block; width: 80%; background: #111; color: orange; border: 1px solid orange;
-    }
-    button {
-      padding: 10px 20px; background-color: orange; border: none; border-radius: 10px; color: #000; font-weight: bold; cursor: pointer;
-    }
-    button:hover {
-      background-color: #ff9933;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Acadif is a smart, cloud-based attendance system for Indian schools and colleges with QR login and real-time reports." />
+  <meta name="keywords" content="Acadif, attendance app, school ERP, smart attendance, QR code, student management" />
+  <meta name="author" content="Sachin Kumar" />
+  <title>Acadif - Smart Attendance System</title>
+  
+  <!-- Google Font: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+
+
+
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Contact Acadif</h1>
-  <form action="https://formsubmit.co/YOUR_EMAIL@example.com" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required />
-    <input type="email" name="email" placeholder="Your Email" required />
-    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
+
+  <!-- Navbar -->
+<header class="navbar">
+  <div class="navbar-container">
+    <div class="logo">
+      <a href="#home">Acadif</a>
+    </div>
+    <nav class="nav-links" id="navLinks">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle" id="menuToggle">☰</div>
+  </div>
+</header>
+    
+    <section id="home" class="hero-section">
+  <div class="hero-overlay">
+    <div class="hero-content">
+      <div class="ai-tag">
+        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712105.png" alt="AI Icon" />
+        <span>AI-powered Education Management</span>
+      </div>
+      <h1>
+        Transform your Institution with
+        <span class="highlight-primary">Artificial Intelligence</span>
+      </h1>
+        <p class="hero-description">
+  Acadif is the all-in-one AI-powered platform that revolutionizes how schools and colleges in India manage education, from attendance to analytics.
+</p>
+        <a href="#contact" class="cta-button">Get Started</a>
+        <div class="hero-features">
+  <div class="feature-item">
+    24/7 <span class="feature-small">support</span>
+  </div>
+  <div class="feature-item">
+    AI <span class="feature-small">powered</span>
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+    
+    <section id ="about" class="info-section">
+  <div class="info-container">
+    <div class="info-text">
+      <h2>
+        <span class="primary-text">AI-driven management</span> for Schools and Colleges
+      </h2>
+      <p>
+        Acadif revolutionizes educational institutions by integrating advanced AI technology to streamline operations and enhance learning outcomes. From AI-powered performance insights to smart attendance and modern timetable management, our app equips schools and colleges with tools to operate efficiently and innovate continuously. Experience seamless admission, library, fees, and finance management alongside real-time notifications and interactive quizzes tailored for the Indian education system.
+      </p>
+    </div>
+    <div class="info-image">
+      <img src="imgs/aieducation.jpg" alt="AI Education Illustration">
+    </div>
+  </div>
+</section>
+    
+    <section id = "features" class="features-section">
+  <div class="features-header">
+    <p class="features-subtitle">AI Powered Institution Management</p>
+    <h2>Revolutionize schools and colleges with smart AI features</h2>
+  </div>
+
+  <div class="features-grid">
+    <!-- Feature Card Template (Repeat this 9-10 times) -->
+    <div class="feature-card">
+      <img src="imgs/ai1.png" alt="ai">
+      <h3>AI powered performance insights</h3>
+      <p>Transform academic tracking with AI-driven insights for students and teachers.</p>
+      <button class="read-more-btn" type="button">Read More</button>
+    </div>
+
+    <div class="feature-card">
+      <img src="imgs/attendance.png" alt="Attendance">
+      <h3>Smart Attendance</h3>
+      <p>Automate and optimize attendance intelligent AI solutions.</p>
+      <button class="read-more-btn" type="button">Read More</button>
+    </div>
+
+    <!-- Repeat as needed for 9-10 cards -->
+    <div class="feature-card">
+      <img src="imgs/timetable.png" alt="Feature 3">
+      <h3>Optimized Timetable</h3>
+      <p>AI-powered scheduling for efficient, conflict-free timetables tailored to your institution's needs.</p>
+      <button class="read-more-btn" type="button">Read More</button>
+    </div>
+      
+      <div class="feature-card">
+      <img src="imgs/events.png" alt="Feature 3">
+      <h3>Seemless Event Management</h3>
+      <p>Effortlessly organize and manage educational events with AI-powered scheduling, updates, and tracking.</p>
+      <button class="read-more-btn" type="button">Read More</button>
+    </div>
+      
+      <div class="feature-card">
+      <img src="imgs/meeting.png" alt="Feature 3">
+      <h3>Easy Meeting Management</h3>
+      <p>Schedule and manage meetings effortlessly with Acadif's Meetings feature.</p>
+      <button class="read-more-btn" type="button">Read More</button>
+    </div>
+      
+      <div class="feature-card">
+      <img src="imgs/finanace.png" alt="Feature 3">
+      <h3>Fee and Finance</h3>
+      <p>Centralize and streamline student fees, funds, and staff salary management with ease.</p>
+      <button class="read-more-btn" type="button">Read More</button>
+    </div>
+      
+      <div class="feature-card">
+      <img src="imgs/library.png" alt="Feature 3">
+      <h3>Library</h3>
+      <p>Effortlessly manage and access educational resources with Acadif's Library feature.</p>
+      <button class="read-more-btn" type="button">Read More</button>
+    </div>
+      
+      <div class="feature-card">
+      <img src="imgs/tasks.png" alt="Feature 3">
+      <h3>Tasks and Assignment</h3>
+      <p>Efficiently manage class-based activities, tasks, and assignments with real-time updates and tracking.</p>
+      <button class="read-more-btn" type="button">Read More</button>
+    </div>
+      
+      <div class="feature-card">
+      <img src="imgs/notice.png" alt="Feature 3">
+      <h3>Notice Board and Real time updates</h3>
+      <p>Create and manage noticeboards with real-time updates for seamless communication.</p>
+      <button class="read-more-btn" type="button">Read More</button>
+    </div>
+
+    <!-- Add more cards similarly... -->
+  </div>
+</section>
+    
+    <!-- ===================== PRICING SECTION ===================== -->
+<section id="pricing" class="pricing-section">
+  <div class="container">
+    <h2 class="section-title">Choose the Right Plan for Your Institution</h2>
+    <p class="section-subtitle">Flexible pricing options designed to fit institutions of all sizes</p>
+
+    <div class="pricing-cards">
+      <!-- Bronze Plan -->
+      <div class="pricing-card">
+        <h3 class="plan-title">Bronze-Free</h3>
+        <p class="plan-price"><span class="currency">$</span>0<span class="per">/year</span></p>
+        <ul class="plan-features">
+    <li>
+      <i class="fas fa-check tick-icon"></i> Registration
+    </li>
+            
+    <li>
+      <i class="fas fa-check tick-icon"></i> Attendance Management
+    </li>
+    <li>
+      <i class="fas fa-check tick-icon"></i> Timetable Management
+    </li>
+    <li>
+      <i class="fas fa-check tick-icon"></i> Adjustments
+    </li>
+            
+            <li>
+      <i class="fas fa-check tick-icon"></i> Student Leaves
+    </li>
+    <li>
+      <i class="fas fa-check tick-icon"></i> Tasks
+      <p class="feature-desc">3 Text-based tasks per class.</p>
+    </li>
+    
+            <li>
+      <i class="fas fa-check tick-icon"></i> Meetings
+      <p class="feature-desc">1 Meeting per person/day</p>
+    </li>
+            <li>
+      <i class="fas fa-check tick-icon"></i> Reports
+      <p class="feature-desc">View Only Reports</p>
+                
+    </li>
+            <li>
+      <i class="fas fa-check tick-icon"></i> Notice Board
+      <p class="feature-desc">Text-based 3 Notice/day</p>
+                
+    </li>
+            
+            <li>
+      <i class="fas fa-check tick-icon"></i> Marks and Result Publishing
+      <p class="feature-desc">Only Staff</p>
+                
+    </li>
+  </ul>
+        <p class="plan-note">Ideal for institutions to get start with</p>
+        <button class="plan-button">Get Started with Bronze</button>
+      </div>
+
+      <!-- Silver Plan (Most Popular) -->
+      <div class="pricing-card popular">
+  <div class="popular-badge">
+    <i class="far fa-star"></i> Most Popular
+  </div>
+  <h3 class="plan-title">Silver</h3>
+  <p class="plan-price"><span class="currency">$</span>199<span class="per">/year</span></p>
+  <ul class="plan-features">
+    <li>
+      <i class="fas fa-check tick-icon"></i> All Bronze Features
+      <p class="feature-desc">Includes attendance, basic analytics and more.</p>
+    </li>
+      <li>
+      <i class="fas fa-check tick-icon"></i> Tasks
+      <p class="feature-desc">10 Text-based tasks per class, Student Submission</p>
+          <p class="feature-desc"></p>
+    </li>
+    
+            <li>
+      <i class="fas fa-check tick-icon"></i> Meetings
+      <p class="feature-desc">5 Meeting per person/day</p>
+    </li>
+            <li>
+      <i class="fas fa-check tick-icon"></i> Reports
+      <p class="feature-desc">Monthly Publish on Email</p>
+                
+    </li>
+            <li>
+      <i class="fas fa-check tick-icon"></i> Notice Board
+      <p class="feature-desc">Text-based 10 Notice/day</p>
+                
+    </li>
+            
+    <li>
+      <i class="fas fa-check tick-icon"></i> Marks and Result Publishing
+      <p class="feature-desc">Viewable for Parents</p>
+                
+    </li>
+      
+    <li>
+      <i class="fas fa-check tick-icon"></i> Fee Management
+      <p class="feature-desc">Student fee deposits</p>
+                
+    </li>
+      
+    
+  </ul>
+  <p class="plan-note">Best suited for growing institutions</p>
+  <button class="plan-button">Get Started with Silver</button>
+</div>
+
+      <!-- Gold Plan -->
+      <div class="pricing-card">
+        <h3 class="plan-title">Gold</h3>
+        <p class="plan-price"><span class="currency">$</span>499<span class="per">/year</span></p>
+        <ul class="plan-features">
+    <li>
+      <i class="fas fa-check tick-icon"></i> Everything in silver, powered by AI.
+      
+    </li>
+            <li>
+      <i class="fas fa-check tick-icon"></i> AI insights
+      <p class="feature-desc">For improvment of students, teachers and institution.</p>
+          <p class="feature-desc"></p>
+    </li>
+            
+            <li>
+      <i class="fas fa-check tick-icon"></i> Smart Activity
+      <p class="feature-desc">Quick Quizes, Hints, Help and more.</p>
+                
+    </li>
+            
+            <li>
+      <i class="fas fa-check tick-icon"></i> Career Guidance
+      <p class="feature-desc">Find best suitable passion for you.</p>
+          <p class="feature-desc"></p>
+    </li>
+            <li>
+      <i class="fas fa-check tick-icon"></i> Smart Timetable
+      <p class="feature-desc">Auto Conflict Resoulution, suggestion and more</p>
+          <p class="feature-desc"></p>
+    </li>
+      <li>
+      <i class="fas fa-check tick-icon"></i> Tasks
+      <p class="feature-desc">Student Submission, Sharing among peers.</p>
+          
+    </li>
+    
+            <li>
+      <i class="fas fa-check tick-icon"></i> Meetings
+      <p class="feature-desc">Auto prioritized what you need</p>
+    </li>
+            <li>
+      <i class="fas fa-check tick-icon"></i> Reports
+      <p class="feature-desc">Smart insight about students activity</p>
+                
+    </li>
+            <li>
+      <i class="fas fa-check tick-icon"></i> Notice Board
+      <p class="feature-desc">Unlimited Media Based.</p>
+                
+    </li>
+            
+    <li>
+      <i class="fas fa-check tick-icon"></i> Marks and Result Publishing
+      <p class="feature-desc">Weekly published on Email.</p>
+                
+    </li>
+      
+    <li>
+      <i class="fas fa-check tick-icon"></i> Fee Management
+      <p class="feature-desc">Staff salaries, balance sheet and more</p>
+                
+    </li>
+      
+    
+  </ul>
+        <p class="plan-note">Laverage the benfits of AI. Get Smarter, stay ahead</p>
+        <button class="plan-button">Get Started with Gold</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- Feature Detail Modal -->
+<div id="featureModal" class="feature-modal">
+  <div class="modal-content">
+    <span class="close-btn" id="closeModal">&times;</span>
+
+    <div class="modal-body">
+      <div class="modal-image">
+        <img id="modalImage" src="" alt="Feature Image">
+      </div>
+
+      <div class="modal-text">
+        <h2 id="modalTitle">Feature Title</h2>
+        <h4 id="modalSubtitle">Subtitle</h4>
+        <p id="modalDescription">
+          Long description goes here. It will be replaced dynamically based on the clicked feature.
+        </p>
+
+        <div class="modal-pagination">
+          <button id="prevBtn">← Prev</button>
+          <span id="paginationCount">1 / 10</span>
+          <button id="nextBtn">Next →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    <!-- Team Section 
+<section class="team-section" id="team">
+  <div class="container">
+
+    <h2 class="section-subtitle">Meet Our Team</h2>
+    <h1 class="section-title">The Minds Behind Acadif</h1>
+
+
+    <div class="team-members">
+      <!-- Team Member Card
+      <div class="team-card">
+        <img src="images/team1.jpg" alt="John Doe" class="team-image" />
+        <h3 class="team-name">John Doe</h3>
+        <p class="team-role">CEO & Co-Founder</p>
+      </div>
+
+      <!-- Another Team Member
+      <div class="team-card">
+        <img src="images/team2.jpg" alt="Jane Smith" class="team-image" />
+        <h3 class="team-name">Jane Smith</h3>
+        <p class="team-role">CTO & Co-Founder</p>
+      </div>
+
+     
+    </div>
+  </div>
+</section>
+-->
+    
+    <!-- Contact Us Section -->
+<section class="contact-section" id="contact">
+  <div class="container">
+    <h2 class="section-subtitle">Get in Touch</h2>
+    <h1 class="section-title">Contact Us</h1>
+
+    <form action="https://formspree.io/f/your_form_id" method="POST" class="contact-form">
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Your Name" required />
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Your Email" required />
+      </div>
+      <div class="form-group">
+        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit" class="contact-btn">Send Message</button>
+    </form>
+  </div>
+</section>
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-col footer-brand">
+      <h2 class="brand-name">Acadif</h2>
+      <p class="footer-desc">AI-powered platform for smarter education in India. Seamlessly manage, track, and enhance your institution’s performance.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li>Email: <a href="mailto:services@acadif.com">services@acadif.com</a></li>
+        <li>Address: New Delhi, India</li>
+        <li>Support: 24/7</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© <span id="footerYear"></span> Acadif. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
