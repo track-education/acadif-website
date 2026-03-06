@@ -1,0 +1,55 @@
+# Flutter & Dart related
+**/build/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+.idea/
+.melos_tool/
+
+# VS Code settings
+.vscode/
+
+# macOS specific
+.DS_Store
+
+# Linux specific
+*.swp
+
+# Android & iOS
+android/.gradle/
+android/captures/
+android/app/debug/
+android/app/profile/
+android/app/release/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/Flutter/ephemeral/
+ios/Pods/
+ios/Runner.xcworkspace/
+ios/.symlinks/
+ios/build/
+ios/Podfile.lock
+ios/.flutter-plugins
+
+# Web
+web/.dart_tool/
+web/build/
+
+# Windows
+windows/build/
+windows/.dart_tool/
+
+# Generated files
+*.lock
+*.iml
+*.log
+
+# Misc
+coverage/
+.env
+*.orig
+*.rej
