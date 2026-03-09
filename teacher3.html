@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Acadif for Teachers</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --primary-color: #f04b18;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        margin: 0;
+        background: #f6f8fb;
+        font-family: "Poppins", sans-serif;
+        color: #333;
+      }
+
+      /* HERO */
+
+      .teacher-hero {
+        padding: 120px 20px 80px;
+        text-align: center;
+        background: white;
+      }
+
+      .teacher-hero h1 {
+        font-size: 42px;
+        max-width: 800px;
+        margin: auto;
+      }
+
+      .teacher-hero span {
+        color: var(--primary-color);
+      }
+
+      .teacher-hero p {
+        max-width: 650px;
+        margin: 20px auto;
+        color: #666;
+        font-size: 16px;
+        line-height: 1.7;
+      }
+
+      /* FEATURE GRID */
+
+      .teacher-features {
+        padding: 80px 20px;
+      }
+
+      .teacher-container {
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      .teacher-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+      }
+
+      .teacher-card {
+        background: white;
+        padding: 30px 25px;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        transition: all 0.25s ease;
+      }
+
+      .teacher-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+      }
+
+      .teacher-card h3 {
+        color: var(--primary-color);
+        margin-bottom: 10px;
+        font-size: 20px;
+      }
+
+      .teacher-card p {
+        color: #666;
+        font-size: 15px;
+        line-height: 1.6;
+      }
+
+      /* STORY SECTIONS */
+
+      .story-section {
+        padding: 80px 20px;
+        background: white;
+      }
+
+      .story-container {
+        max-width: 1100px;
+        margin: auto;
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .story-text {
+        flex: 1;
+        min-width: 280px;
+      }
+
+      .story-text h2 {
+        font-size: 30px;
+        margin-bottom: 15px;
+      }
+
+      .story-text span {
+        color: var(--primary-color);
+      }
+
+      .story-text p {
+        line-height: 1.7;
+        color: #555;
+      }
+
+      .story-box {
+        margin-top: 20px;
+        background: #fff4ef;
+        padding: 18px;
+        border-left: 4px solid var(--primary-color);
+        border-radius: 6px;
+      }
+
+      .story-image {
+        flex: 1;
+        min-width: 250px;
+        text-align: center;
+      }
+
+      .story-image img {
+        width: 250px;
+      }
+
+      /* CTA */
+
+      .teacher-cta {
+        padding: 80px 20px;
+        text-align: center;
+        background: linear-gradient(135deg, #4f46e5, #6d28d9);
+        color: white;
+      }
+
+      .teacher-cta h2 {
+        font-size: 32px;
+        margin-bottom: 10px;
+      }
+
+      .teacher-cta p {
+        opacity: 0.9;
+        margin-bottom: 25px;
+      }
+
+      .teacher-btn {
+        background: white;
+        color: #4f46e5;
+        padding: 12px 28px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .teacher-btn:hover {
+        background: #f2f2f2;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- HERO -->
+
+    <section class="teacher-hero">
+      <h1>Empowering <span>Teachers</span> with Smart AI Tools</h1>
+
+      <p>
+        Acadif reduces administrative workload and helps teachers focus on
+        teaching. From automatic teaching plans to AI-powered insights, Acadif
+        transforms the way educators work.
+      </p>
+    </section>
+
+    <!-- FEATURE GRID -->
+
+    <section class="teacher-features">
+      <div class="teacher-container">
+        <div class="teacher-grid">
+          <div class="teacher-card">
+            <h3>Smart Teaching Plan</h3>
+            <p>
+              Automatically generate daily, weekly, semester or annual teaching
+              plans using syllabus and timetable.
+            </p>
+          </div>
+
+          <div class="teacher-card">
+            <h3>Digital Teaching Diary</h3>
+            <p>
+              Maintain lesson notes, teaching materials and teaching aids in one
+              organized digital diary.
+            </p>
+          </div>
+
+          <div class="teacher-card">
+            <h3>Assignment Generator</h3>
+            <p>
+              Get suggested assignment topics and exam questions for each
+              lesson. Teachers can edit and send assignments instantly.
+            </p>
+          </div>
+
+          <div class="teacher-card">
+            <h3>Automatic Student Reports</h3>
+            <p>
+              Generate reports including attendance, marks, activity performance
+              and student insights instantly.
+            </p>
+          </div>
+
+          <div class="teacher-card">
+            <h3>Activity & Trip Enrollment</h3>
+            <p>
+              Broadcast events or trips and instantly receive the list of
+              interested students.
+            </p>
+          </div>
+
+          <div class="teacher-card">
+            <h3>Parent Feedback via IVR</h3>
+            <p>
+              Collect parent feedback through automated IVR calls and get
+              structured reports.
+            </p>
+          </div>
+
+          <div class="teacher-card">
+            <h3>AI Teaching Assistant</h3>
+            <p>
+              Receive teaching tips, examples, suggestions and classroom
+              activities powered by AI.
+            </p>
+          </div>
+
+          <div class="teacher-card">
+            <h3>Automatic Attendance</h3>
+            <p>
+              Attendance can be recorded automatically using biometric or
+              camera-based systems.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORY SECTION -->
+
+    <section class="story-section">
+      <div class="story-container">
+        <div class="story-text">
+          <h2>
+            Spend less time on admin work and <span>more time teaching</span>
+          </h2>
+
+          <p>
+            Teachers often spend hours preparing plans, assignments and reports.
+            Acadif automates these repetitive tasks so teachers can focus on
+            students and learning.
+          </p>
+
+          <div class="story-box">
+            <strong>Acadif Solution</strong><br />
+            Generate teaching plans, assignments and reports automatically with
+            just a few clicks.
+          </div>
+        </div>
+
+        <div class="story-image">
+          <img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png" />
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+
+    <section class="teacher-cta">
+      <h2>Transform the way teachers work</h2>
+
+      <p>Bring smart automation and AI insights into your classrooms.</p>
+
+      <a href="index.html#contact" class="teacher-btn">Request Demo</a>
+    </section>
+  </body>
+</html>
