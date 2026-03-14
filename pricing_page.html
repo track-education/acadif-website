@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acadif Pricing</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{font-family:Poppins, sans-serif;margin:0;background:#f6f8fc;color:#1f2937}
+
+header{
+background:linear-gradient(135deg,#4f46e5,#6366f1);
+color:white;
+padding:80px 20px;
+text-align:center
+}
+
+header h1{font-size:44px;margin-bottom:10px}
+header p{font-size:18px;opacity:.9}
+
+.container{max-width:1200px;margin:auto;padding:60px 20px}
+
+.toggle{
+display:flex;
+justify-content:center;
+margin-bottom:40px;
+gap:10px
+}
+
+.toggle button{
+padding:10px 18px;
+border-radius:30px;
+border:none;
+background:#e5e7eb;
+cursor:pointer;
+font-weight:500
+}
+
+.toggle button.active{
+background:#4f46e5;
+color:white
+}
+
+.pricing{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px
+}
+
+.card{
+background:white;
+border-radius:20px;
+padding:35px;
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+display:flex;
+flex-direction:column;
+position:relative
+}
+
+.badge{
+position:absolute;
+top:-12px;
+right:20px;
+background:#22c55e;
+color:white;
+padding:6px 12px;
+border-radius:20px;
+font-size:12px;
+font-weight:600
+}
+
+.card h2{text-align:center;margin-top:0}
+
+.price{
+text-align:center;
+font-size:38px;
+font-weight:700;
+margin:10px 0 25px
+}
+
+.features{list-style:none;padding:0;margin:0 0 25px 0;flex:1}
+.features li{
+padding:8px 0;
+border-bottom:1px solid #f1f5f9;
+font-size:14px
+}
+
+button{
+border:none;
+padding:14px;
+border-radius:10px;
+background:#4f46e5;
+color:white;
+font-size:15px;
+cursor:pointer;
+font-weight:500
+}
+
+button:hover{background:#4338ca}
+
+.offer{
+margin-top:70px;
+background:#fff7ed;
+border:1px solid #fed7aa;
+padding:35px;
+border-radius:16px;
+text-align:center
+}
+
+.offer h2{margin-top:0}
+
+.features-section{
+margin-top:80px
+}
+
+.features-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+margin-top:30px
+}
+
+.feature-box{
+background:white;
+padding:25px;
+border-radius:16px;
+box-shadow:0 10px 25px rgba(0,0,0,.06)
+}
+
+.feature-box h4{margin:0 0 10px 0}
+
+footer{
+text-align:center;
+padding:40px;
+color:#6b7280
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Acadif School ERP</h1>
+<p>Affordable digital infrastructure for modern schools</p>
+</header>
+
+<div class="container">
+
+<div class="toggle">
+<button class="active">Yearly</button>
+<button>Monthly</button>
+</div>
+
+<div class="pricing">
+
+<div class="card">
+<h2>Free</h2>
+<div class="price">₹0</div>
+<ul class="features">
+<li><b>Students:</b> up to 200</li>
+<li><b>Tasks:</b> 5 text tasks/week/user</li>
+<li><b>Notice Board:</b> 10 notices/month</li>
+<li><b>Events:</b> 5 events/month</li>
+<li><b>Attendance:</b> Manual attendance</li>
+<li><b>Timetable:</b> Basic timetable</li>
+<li><b>Reports:</b> Basic attendance report</li>
+<li><b>Gallery:</b> 50 photos</li>
+<li><b>Storage:</b> 200MB</li>
+<li><b>Notifications:</b> In‑app only</li>
+<li><b>Support:</b> Community email</li>
+</ul>
+<button>Start Free</button>
+</div>
+
+<div class="card">
+<div class="badge">Most Popular</div>
+<h2>Standard</h2>
+<div class="price">₹20 <span style="font-size:14px;font-weight:400">/ student / year</span></div>
+<ul class="features">
+<li><b>Students:</b> Unlimited</li>
+<li><b>Tasks:</b> 20 text + image tasks/week/user</li>
+<li><b>Notice Board:</b> Unlimited notices</li>
+<li><b>Events:</b> Unlimited events</li>
+<li><b>Attendance:</b> QR + manual</li>
+<li><b>Timetable:</b> Advanced timetable</li>
+<li><b>Marks:</b> Exam & assignment marks</li>
+<li><b>Reports:</b> Attendance + marks reports</li>
+<li><b>Leaves:</b> Teacher & student leave management</li>
+<li><b>Gallery:</b> 1000 photos/videos</li>
+<li><b>Storage:</b> 5GB</li>
+<li><b>Notifications:</b> Email + in‑app</li>
+<li><b>Support:</b> Priority support</li>
+</ul>
+<button>Choose Standard</button>
+</div>
+
+<div class="card">
+<h2>Enterprise</h2>
+<div class="price">Custom</div>
+<ul class="features">
+<li><b>Students:</b> Unlimited</li>
+<li><b>Tasks:</b> Unlimited tasks/week/user any file</li>
+<li><b>Notice Board:</b> Unlimited</li>
+<li><b>Events:</b> Unlimited</li>
+<li><b>Attendance:</b> Biometric + QR</li>
+<li><b>Timetable:</b> AI optimized timetable</li>
+<li><b>Marks:</b> Full exam management</li>
+<li><b>Reports:</b> Advanced analytics</li>
+<li><b>Library:</b> Full library system</li>
+<li><b>Fee Management:</b> Complete fee module</li>
+<li><b>Transport:</b> School bus management</li>
+<li><b>Salary:</b> Staff payroll system</li>
+<li><b>AI Insights:</b> Student performance prediction</li>
+<li><b>E‑Books:</b> Unlimited</li>
+<li><b>Storage:</b> Unlimited</li>
+<li><b>Notifications:</b> SMS + Email + App</li>
+<li><b>Support:</b> Dedicated account manager</li>
+</ul>
+<button>Contact Sales</button>
+</div>
+
+</div>
+
+<div class="offer">
+<h2>🎉 Special Offer for Small Schools</h2>
+<p>
+Schools with <b>less than 200 students</b> can use <b>Acadif FREE forever</b>.
+Start digital transformation today and upgrade only when your school grows.
+</p>
+</div>
+
+<div class="features-section">
+<h2 style="text-align:center">Why Schools Choose Acadif</h2>
+
+<div class="features-grid">
+
+<div class="feature-box">
+<h4>📊 Smart Reports</h4>
+<p>Instant attendance, marks and performance analytics.</p>
+</div>
+
+<div class="feature-box">
+<h4>📅 Academic Planning</h4>
+<p>Manage timetable, exams, assignments and school events.</p>
+</div>
+
+<div class="feature-box">
+<h4>🔔 Smart Notifications</h4>
+<p>Send alerts to students, teachers and parents instantly.</p>
+</div>
+
+<div class="feature-box">
+<h4>🤖 AI Insights</h4>
+<p>Predict student performance and detect risk early.</p>
+</div>
+
+<div class="feature-box">
+<h4>📚 Digital Library</h4>
+<p>Manage books, e‑books and borrowing records.</p>
+</div>
+
+<div class="feature-box">
+<h4>🚌 Transport Tracking</h4>
+<p>Monitor school buses and routes easily.</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 Acadif • Built for modern schools
+</footer>
+
+</body>
+</html>
